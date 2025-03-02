@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Install dependencies  # 🔹 Ajouté pour éviter l'erreur "vite not found"
-        run: npm install
+      - run: npm install --legacy-peer-deps
       - run: npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
