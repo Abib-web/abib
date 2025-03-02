@@ -1,0 +1,17 @@
+.article-content {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  .article-content h1, .article-content h2, .article-content h3 {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .article-content p {
+    margin-bottom: 1em;
+  }
+  .article-content img {
+    max-width: 50%;
+    height: auto;
+  }

@@ -1,0 +1,59 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 5rem;
+  background-color: #f7f7f7;
+  color: #2e2e2e;
+}
+
+.hero-content {
+  flex: 1; /* Prend tout l'espace disponible */
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  color: #007bff;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-buttons button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  margin-right: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-buttons button:hover {
+  background-color: #10b981;
+}
+
+/* Section des visuels */
+.hero-visuals {
+  flex: 1; /* Prend tout l'espace disponible */
+  display: flex;
+  justify-content: center; /* Centre l'avatar horizontalement */
+  align-items: center; /* Centre verticalement */
+  position: relative;
+}
+
+.hero-visuals .hero-image {
+  width: 250px; /* Taille de l'image */
+  height: auto;
+  border-radius: 50%; /* Rend l'image ronde */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Ombre douce */
+}

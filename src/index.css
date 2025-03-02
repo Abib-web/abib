@@ -1,0 +1,29 @@
+body {
+  background-color: #f7f7f7; /* Fond blanc cassé */
+  color: #2e2e2e; /* Texte gris foncé */
+  font-family: 'Inter', 'Poppins', sans-serif;
+}
+
+a {
+  color: #007bff; /* Liens actifs en bleu électrique */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #10b981; /* Survol des liens en vert menthe */
+}
+
+button {
+  background-color: #007bff; /* Boutons principaux */
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #10b981; /* Survol des boutons en vert menthe */
+}
