@@ -62,7 +62,7 @@ const Footer = () => {
 
       <div className="footer-bottom">
         <p>
-          &copy; {new Date().getFullYear()} Votre Nom. Tous droits réservés.
+          &copy; {new Date().getFullYear()} Oumar Kone. Tous droits réservés.
         </p>
       </div>
     </footer>
