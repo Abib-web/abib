@@ -4,7 +4,6 @@ import Hero from "./hero-section/HeroSection";
 import ProjectsSection from "./ProjectsSection/ProjectsSection";
 import Skills from "./skills/Skills";
 import client from '../contentfulClient';
-import Articles from "./Article/ArticlePage";
 import "./Home.css";
 
 const Home = () => {
@@ -30,21 +29,26 @@ const Home = () => {
         <h1>Mes articles</h1>
         <ul className="articles-list">
           {articles.map((article) => (
-            <li key={article.sys.id} className="article-item" onClick={() => handleArticleClick(article.sys.id)}>
+            <li
+              key={article.sys.id}
+              className={`article-item ${!article.fields.image ? 'no-image' : ''}`}
+              onClick={() => handleArticleClick(article.sys.id)}
+            >
               <div className="article-content">
                 <h2>{article.fields.titre}</h2>
-                {article.fields.image?.fields?.file?.url && (
+                {article.fields.image?.fields?.file?.url ? (
                   <img
                     src={`https:${article.fields.image.fields.file.url}`}
                     alt={article.fields.titre}
                     className="article-image"
                   />
+                ) : (
+                  <p>Aucune image disponible</p>
                 )}
               </div>
             </li>
           ))}
         </ul>
-        <Articles />
       </div>
     </>
   );
