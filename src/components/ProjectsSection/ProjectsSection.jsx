@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import projects from "../../data/projectsData";
-<<<<<<< HEAD
-=======
 import { motion, AnimatePresence } from "framer-motion";
->>>>>>> gh-pages
 import "./ProjectsSection.css";
 
 const ProjectsSection = () => {
@@ -14,17 +11,11 @@ const ProjectsSection = () => {
   };
 
   return (
-<<<<<<< HEAD
-    <section className="projects-section">
-      <h2>Mes Projets</h2>
-      <div className="projects-grid">
-=======
     <section className="projects-section" id="projects">
       <h2>Mes Projets</h2>
       <p>Voici quelques-uns de mes projets récents :</p>
       <div className="projects-grid">
         {/* Afficher uniquement les 3 premiers projets */}
->>>>>>> gh-pages
         {projects.slice(0, 3).map((project) => (
           <div
             key={project.id}
@@ -37,26 +28,6 @@ const ProjectsSection = () => {
           </div>
         ))}
       </div>
-<<<<<<< HEAD
-      <button className="see-more-btn" onClick={() => window.location.href = "/projects"}>
-        Voir plus
-      </button>
-
-      {/* Affichage du projet en détail */}
-      {selectedProject && (
-        <div className="project-modal">
-          <div className="project-modal-content">
-            <span className="close-btn" onClick={() => setSelectedProject(null)}>&times;</span>
-            <img src={selectedProject.image} alt={selectedProject.title} />
-            <h3>{selectedProject.title}</h3>
-            <p>{selectedProject.description}</p>
-            <a href={selectedProject.link} target="_blank" rel="noopener noreferrer">
-              Voir le projet complet
-            </a>
-          </div>
-        </div>
-      )}
-=======
 
       {/* Bouton "Voir Plus" */}
       <button
@@ -111,7 +82,6 @@ const ProjectsSection = () => {
           </motion.div>
         )}
       </AnimatePresence>
->>>>>>> gh-pages
     </section>
   );
 };

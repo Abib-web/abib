@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-import React from "react";
-import Hero from "./hero-section/HeroSection";
-import ProjectsSection from "./ProjectsSection/ProjectsSection";
-import Skills from "./skills/Skills";
-
-const Home = () => {
-  return (
-    <>
-      <Hero />
-      <Skills/>
-      <ProjectsSection />
-=======
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Hero from "./hero-section/HeroSection";
@@ -59,7 +46,6 @@ const Home = () => {
         </ul>
         <Articles />
       </div>
->>>>>>> gh-pages
     </>
   );
 };

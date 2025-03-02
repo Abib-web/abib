@@ -19,11 +19,6 @@ header {
     color: #2e2e2e;
     text-decoration: none;
   }
-<<<<<<< HEAD
-  
-=======
-
->>>>>>> gh-pages
   .nav-list {
     display: flex;
     gap: 2rem; /* Espace entre les liens */
@@ -32,11 +27,6 @@ header {
     padding: 0;
     align-items: center; /* Aligne les items au centre */
   }
-<<<<<<< HEAD
-  
-=======
-
->>>>>>> gh-pages
   .nav-item a {
     font-size: 1rem;
     color: #2e2e2e;
@@ -44,19 +34,11 @@ header {
     position: relative;
     transition: color 0.3s ease;
   }
-<<<<<<< HEAD
-  
-  .nav-item a:hover {
-    color: #007bff;
-  }
-  
-=======
 
   .nav-item a:hover {
     color: #007bff;
   }
 
->>>>>>> gh-pages
   .nav-item a::after {
     content: "";
     position: absolute;
@@ -67,19 +49,11 @@ header {
     background-color: #007bff;
     transition: width 0.3s ease;
   }
-<<<<<<< HEAD
-  
-  .nav-item a:hover::after {
-    width: 100%;
-  }
-  
-=======
 
   .nav-item a:hover::after {
     width: 100%;
   }
 
->>>>>>> gh-pages
   button {
     background-color: #007bff;
     color: #fff;
@@ -92,17 +66,8 @@ header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
   }
-<<<<<<< HEAD
-  
-=======
-
->>>>>>> gh-pages
   button:hover {
     background-color: #10b981;
     transform: scale(1.1);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
   }
-<<<<<<< HEAD
-  
-=======
->>>>>>> gh-pages
