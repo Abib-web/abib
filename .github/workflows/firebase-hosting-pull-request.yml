@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: 22
       - name: Install dependencies
-        run: npm ci --legacy-peer-deps  # Utilisez --legacy-peer-deps ici
+        run: npm install --legacy-peer-deps  # Utilisez --legacy-peer-deps ici
       - name: Build project
         run: npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
