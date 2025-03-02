@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import ProjectsSection from "./components/ProjectsSection/ProjectsSection";
 import Skills from "./components/skills/Skills"
 import Header from "./components/header/Header";
+import Footer from "./components/Footer/Footer";
 import ArticlePage from "./components/Article/ArticlePage";
 import "./App.css";
 
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/skills" element={<Skills />} />
         <Route path="/article/:articleId" element={<ArticlePage />} />
       </Routes>
+       <Footer></Footer>
     </Router>
   );
 };
