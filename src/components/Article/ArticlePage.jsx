@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import remarkGfm from "remark-gfm";
 import { useParams } from "react-router-dom";
 import client from "../../contentfulClient";
 import "./ArticlePage.css";
@@ -30,7 +30,7 @@ const ArticlePage = () => {
   if (error) return <p>{error}</p>;
   if (!article) return <p>Aucun article trouvé.</p>;
 
-  const imageUrl = article?.fields?.image?.fields?.file?.url;
+  const imageUrl = article?.fields?.dataImage?.[0].fields?.file?.url;
   const titre = article?.fields?.titre || "Titre non disponible";
   const contenu = article?.fields?.contenu;
 
@@ -41,17 +41,9 @@ const ArticlePage = () => {
     <div className="article-container">
       <h1>{titre}</h1>
 
-      {imageUrl && (
-        <img
-          src={`https:${imageUrl}`}
-          alt={titre || "Image de l'article"}
-          className="article-image"
-        />
-      )}
-
       <div className="article-content">
         {contenu ? (
-          <ReactMarkdown>{contenu}</ReactMarkdown>
+          <ReactMarkdown children={contenu} remarkPlugins={[remarkGfm]} />
         ) : (
           <p>Contenu non disponible.</p>
         )}
