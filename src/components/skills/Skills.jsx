@@ -1,7 +1,6 @@
   import React, { useState } from "react";
   import "./Skills.css";
   import { motion, AnimatePresence } from "framer-motion";
-  import { Radar } from "react-chartjs-2"; // Importer le radar depuis react-chartjs-2
   import {
     Chart as ChartJS,
     RadialLinearScale,
@@ -49,34 +48,7 @@
     );
   };
 
-  const radarData = {
-    labels: skills.map((skill) => skill.name), // Utiliser les noms des compétences comme étiquettes
-    datasets: [
-      {
-        label: "Niveau de Compétence (%)",
-        data: [90, 80, 75, 70, 85, 60, 70, 80, 75, 77, 55, 66,50, 80,70,60,56,70,80,60,78,99], // Niveaux fictifs (vous pouvez les ajuster)
-        backgroundColor: "rgba(0, 123, 255, 0.2)",
-        borderColor: "#007bff",
-        borderWidth: 2,
-      },
-    ],
-  };
 
-  const radarOptions = {
-    responsive: true,
-    maintainAspectRatio: false,
-    scales: {
-      r: {
-        angleLines: { color: "#ddd" },
-        grid: { color: "#ddd" },
-        ticks: {
-          display: true,
-          stepSize: 20,
-          color: "#555",
-        },
-      },
-    },
-  };
 
   const Skills = () => {
     const [selectedSkill, setSelectedSkill] = useState(null);
@@ -103,13 +75,6 @@
             onClose={() => setSelectedSkill(null)}
           />
         )}
-        {/* Ajout du graphique radar */}
-        <div className="radar-chart">
-          <h3>Niveau de Compétence</h3>
-          <div style={{ width: "100%", height: "400px" }}>
-            <Radar data={radarData} options={radarOptions} />
-          </div>
-        </div>
       </section>
     );
   };
