@@ -6,7 +6,7 @@ const projects = [
     description: "Surveillance en temps réel via capteurs LoRa et tableau de bord web.",
     technologies: ["LoRaWAN", "React", "Node.js", "MongoDB"],
     image: "./0b5d284f-435b-45ac-b829-064a6873f842.jpeg",
-    link: "https://github.com/Abib-web/air-quality-iot-system",
+    link: "https://codesandbox.io/p/github/Abib-web/application-front-end-pfe/main",
   },
   {
     id: 2,

@@ -9,7 +9,15 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
 }
-
+.title-h2-p{
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #007bff;
+}
+.p-p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
 .project-card {
   background-color: #ffffff;
   border-radius: 12px;
@@ -33,6 +41,7 @@
 }
 
 .see-more-btn {
+  margin-top: 10px;
   background-color: #007bff;
   color: white;
   border: none;

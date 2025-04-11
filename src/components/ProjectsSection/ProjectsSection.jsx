@@ -12,10 +12,9 @@ const ProjectsSection = () => {
 
   return (
     <section className="projects-section" id="projects">
-      <h2>Mes Projets</h2>
-      <p>Voici quelques-uns de mes projets récents :</p>
+      <h2 className="title-h2-p">Mes Projets</h2>
+      <p className="p-p">Voici quelques-uns de mes projets récents :</p>
       <div className="projects-grid">
-        {/* Afficher uniquement les 3 premiers projets */}
         {projects.slice(0, 3).map((project) => (
           <div
             key={project.id}

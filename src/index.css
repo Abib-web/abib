@@ -1,7 +1,7 @@
 body {
   background-color: #f7f7f7; /* Fond blanc cassé */
   color: #2e2e2e; /* Texte gris foncé */
-  font-family: 'Inter', 'Poppins', sans-serif;
+  font-family: 'Inter', 'Poppins', sans-serif !important;
 }
 
 a {

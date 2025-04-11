@@ -55,7 +55,7 @@
 
     return (
       <section className="skills" id="skills">
-        <h2>Mes Compétences</h2>
+        <h2 className="title-h2">Mes Compétences</h2>
         <p>Voici un aperçu des technologies et outils que j'utilise :</p>
         <div className="skills-container">
           {skills.map((skill, index) => (

@@ -116,3 +116,8 @@
   .article-item.no-image h2 {
     color: #555;
   }
+  svg {
+    width: 100%;
+    height: auto;
+  }
+  

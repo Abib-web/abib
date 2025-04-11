@@ -50,7 +50,7 @@ const skills = [
       description: "Appris en autodidacte et utilisé pour des projets personnels et académiques en IoT et systèmes embarqués."
     },
     {
-      name: "Altium Designer",
+      name: "Altium",
       icon: "./altium.jpeg",
       description: "Appris lors de cours universitaires et utilisé pour la conception de circuits imprimés dans mon emploi d'assistant de recherche."
     },
@@ -65,12 +65,12 @@ const skills = [
       description: "Expérience approfondie grâce à des cours et des projets professionnels en tant qu'assistant de recherche."
     },
     {
-      name: "PLC SIEMENS",
+      name: "SIEMENS",
       icon: "./plc.png",
       description: "Utilisé lors de mon premier stage en génie électrique pour le contrôle de niveau, débit, pression et température."
     },
     {
-      name: "PLC ALLEN-BRADLEY",
+      name: "ALLEN-BRADLEY",
       icon: "./AB.png",
       description: "Appris dans des cours universitaires sur l'automatisation industrielle."
     },
